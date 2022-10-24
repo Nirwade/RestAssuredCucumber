@@ -1,0 +1,39 @@
+package oPPsConCept;   // Abstract is an idea/illusion which does not have any physical form
+                         /* Abstraction - -> Hiding the unnecessary details & showing only the essential parts/functionalities to the user.
+                          * We can achieve abstraction in 2 ways 1.Abstract class 2.Interfaces (Pure Abstraction)
+                          */
+abstract class Animal {        
+	                             // Since we have inherited the properties of animal class inside horse and chicken classes
+abstract public void walk();     // showing animal class to user will be unrequired, hence we can make the animal class as abstract 
+	                             // as will not create obj of animal class coz we have horse and chicken classes
+	                             // We can even make properties(attributes) and functions of abstract class as Abstract
+		                        // Here the walk function is imp in other classes but will be not used in animal class as it's not required
+	                            // once we make the walk function as abstract, it's implementation is not required
+                                //coz that function will be inherited in other classes
+}                               //
+
+class Horse extends Animal {
+	
+	public void walk() {
+		
+		System.out.println("walks on 4 legs");
+	}
+}
+
+class Chicken extends Animal{
+	
+	public void walk() {
+		
+		System.out.println("walks on 2 legs");
+	}
+}
+
+public class AbStraction {
+
+public static void main(String[] args) {
+	
+	Horse h1 = new Horse();            //notes: if try to create the obj of abstract class we will get runtime error(when running the program)
+	h1.walk();                        //  will not see error during the compile time(in the editor)
+                
+	}
+}

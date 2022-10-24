@@ -1,0 +1,22 @@
+package OOPS;
+
+public class RunnerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Employee emp1 = new Employee();
+		emp1.Name = "Anand";
+		emp1.Salary =70000;
+		emp1.Company= "Tata";
+		
+		Employee emp2 = new Employee();
+		emp2.Name= "Himanshu";
+		emp2.Salary =750000;
+		emp2.Company ="Brila";
+		
+		System.out.println("This is for sample...." + emp1.Name   +    emp2.Name );
+
+	}
+
+}

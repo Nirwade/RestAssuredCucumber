@@ -1,0 +1,12 @@
+package OOPS;
+
+public class Employee {
+	String Name;
+	int Salary;
+	String Company;
+	
+	public void Printname(){
+	System.out.println("The name of employee..." + Name);
+	}
+	
+}

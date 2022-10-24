@@ -1,0 +1,16 @@
+package Test3;
+
+public class ChildClass extends Person{
+	
+	public ChildClass(String name, int Id) {
+		super(name, Id);
+	}
+
+	public void print() {
+		
+		
+
+}
+
+
+}

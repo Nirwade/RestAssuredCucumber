@@ -1,0 +1,10 @@
+package restAPI;
+
+public class PostReqWithJsonObj {
+
+	@Test
+	public void test5 () {
+		
+		
+	}
+}

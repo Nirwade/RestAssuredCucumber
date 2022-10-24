@@ -1,0 +1,37 @@
+package oPPsConCept;   // Abstract is an idea/illusion which does not have any physical form
+
+
+class Animal {
+	
+	 public void walk() {
+		 
+	 }
+	
+}
+
+class Hourse {
+	
+	public void walk() {
+		
+		System.out.println("walks on 4 legs");
+	}
+}
+
+class Chicken {
+	
+	public void walk() {
+		
+		System.out.println("walks on 2 legs");
+	}
+}
+
+public class AbStraction {
+
+public static void main(String[] args) {
+                /* Abstraction - -> Hiding the unnecessary details & showing only the essential parts/functionalities to the user.
+                * We can achieve abstraction in 2 ways 1.Abstract class 2.Interfaces (Pure Abstraction)
+		 
+
+	             */
+	}
+}

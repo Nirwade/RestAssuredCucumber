@@ -1,0 +1,34 @@
+package Test3;
+
+import java.util.Scanner;
+
+public class ConditionsExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter your age");
+		
+	      int age= scanner.nextInt();
+	      if(age>=18) {
+	      
+	      System.out.println("you are eligibe");
+	      
+	      }	else if(age == 17) {   
+	    	  System.out.println("Better luck next time");
+	    	  
+	      }else {
+	    		  System.out.println("not eligible");
+	    		  
+	    	  }
+	      
+	      scanner.close();
+	      }
+	
+
+	
+	      }
+}
+

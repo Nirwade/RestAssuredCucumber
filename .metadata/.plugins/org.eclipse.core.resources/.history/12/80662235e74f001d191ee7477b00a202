@@ -1,0 +1,33 @@
+package test;
+
+public class ConditionalStatements {
+
+	public static void main(String[] args) {
+		
+		// Conditional statements 
+		
+		boolean IsSunUp = true;
+		 
+		if (IsSunUp== true) {
+			
+			System.out.println("This is a day");
+			
+		}
+		else 
+			System.out.println("This is night");
+		
+
+		int age = 30;
+		
+		if (age>18) {
+			
+			System.out.println("can vote");
+			
+		}
+		
+		else 
+			
+			System.out.println("can't vote");
+	}
+
+}

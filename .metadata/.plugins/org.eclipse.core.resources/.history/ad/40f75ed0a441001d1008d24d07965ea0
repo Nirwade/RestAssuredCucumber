@@ -1,0 +1,10 @@
+package restAPI;
+
+public class PutRequest {
+	
+	public void Put () {
+		
+		
+	}
+
+}

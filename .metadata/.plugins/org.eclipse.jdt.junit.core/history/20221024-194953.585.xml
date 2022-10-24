@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner1" project="RestAssuredCucumber" tests="1" started="0" failures="0" errors="0" ignored="0">
+  <testcase name="restAPI.TestRunner1" classname="restAPI.TestRunner1" incomplete="true"/>
+</testrun>

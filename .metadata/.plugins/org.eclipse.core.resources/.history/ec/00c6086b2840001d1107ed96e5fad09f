@@ -1,0 +1,51 @@
+package test;
+
+import java.util.Scanner;
+
+public class Palendrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String val =sc.next();
+		
+		int start = 0 ;
+		
+		int end = val.length()-1;
+		
+		while (start< end) {
+			
+			if (val.charAt(start)!=val.charAt(end)) {
+				
+				
+				return;
+			}  
+				
+			else {  
+				start++;
+				end--;
+				
+				System.out.println("This is palendrome");
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

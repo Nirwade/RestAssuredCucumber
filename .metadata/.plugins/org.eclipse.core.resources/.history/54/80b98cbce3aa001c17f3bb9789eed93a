@@ -1,0 +1,14 @@
+package Test3;
+
+public class Person {
+
+		
+		String name = "Rahul";
+		int Age = 28;
+		
+		public void display() {
+			 
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package restAPI;
+
+public class GetRequest {
+	
+	public void test1() {
+		
+		
+	}
+
+}

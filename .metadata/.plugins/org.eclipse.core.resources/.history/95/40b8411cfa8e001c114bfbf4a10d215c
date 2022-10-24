@@ -1,0 +1,23 @@
+package Test3;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num1=20;
+		int num2=30;
+		int num3=40;
+		//multiplication
+		//Division
+		int sum=num1+num2;
+		int muli=num2*num3;
+		float div= (float)num1/num2;
+		String result = "sum of two numbers is " + sum;
+		String result1 = "mul of two numbers is " + muli;
+		String result2 = "mul of two numbers is " + muli;
+
+		System.out.println(result,result1,result2);
+	}
+
+}

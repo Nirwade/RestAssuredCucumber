@@ -1,0 +1,25 @@
+package test;
+
+public class Mmthods {
+
+	public static void main(String[] args) {
+		// Methods
+		
+		
+	}
+	
+		public void Mmthods1() {
+			  
+			  System.out.println("Eclipse IDE");
+		}
+
+		public void Mmthods2 () {
+		  
+		  Mmthods1();
+		  Mmthods1();
+		  Mmthods1();
+	
+
+	}
+
+}

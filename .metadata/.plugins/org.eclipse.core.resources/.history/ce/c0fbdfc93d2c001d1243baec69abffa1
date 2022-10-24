@@ -1,0 +1,341 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open Swaglab application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1190313200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launch the swaglab application",
+            "match": {
+              "location": "SwagLogin.i_launch_the_swaglab_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 316095400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter user \"standard_user\" and \"secret_sauce\"  and click on loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 33
+                }
+              ],
+              "location": "SwagLogin.i_enter_user_and_and_click_on_loginpage(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 195994800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be landed on the homepage with successful login message",
+            "match": {
+              "location": "SwagLogin.i_should_be_landed_on_the_homepage_with_successful_login_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-04T09:57:16.543Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3409721500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "validating the product feature using name and its price",
+        "description": "",
+        "id": "this-feature-is-used-to-define-the-login-page-of-the-application;validating-the-product-feature-using-name-and-its-price",
+        "after": [
+          {
+            "result": {
+              "duration": 249218700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102887000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I land on product page",
+            "match": {
+              "location": "SwagProduct.i_land_on_product_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 128977400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I validate its price values along with product name",
+            "match": {
+              "location": "SwagProduct.i_validate_its_price_values_along_with_product_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack",
+                  "$29.99"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "this feature is used to define the login page of the application",
+    "description": "",
+    "id": "this-feature-is-used-to-define-the-login-page-of-the-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Product.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Open swag lab application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1384368900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I launch the swaglab application",
+            "match": {
+              "location": "SwagLogin.i_launch_the_swaglab_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-04T09:57:22.196Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1497884600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "positive login scenario",
+        "description": "",
+        "id": "this-feature-is-used-to-define-the-login-page-of-the-application;positive-login-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 184700600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 302610800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter user \"standard_user\" and \"secret_sauce\"  and click on loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 33
+                }
+              ],
+              "location": "SwagLogin.i_enter_user_and_and_click_on_loginpage(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187832600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be landed on the homepage with successful login message",
+            "match": {
+              "location": "SwagLogin.i_should_be_landed_on_the_homepage_with_successful_login_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Open swag lab application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1313611300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I launch the swaglab application",
+            "match": {
+              "location": "SwagLogin.i_launch_the_swaglab_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-04T09:57:25.774Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1345899200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "negative login scenario with incorrect values",
+        "description": "",
+        "id": "this-feature-is-used-to-define-the-login-page-of-the-application;negative-login-scenario-with-incorrect-values;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 183853400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 296286500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter user \"sfnjd@mail.com\" and \"DG@!@2\"  and click on loginpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sfnjd@mail.com\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"DG@!@2\"",
+                  "offset": 34
+                }
+              ],
+              "location": "SwagLogin.i_enter_user_and_and_click_on_loginpage(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 206828900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should be landed on the homepage with unsuccessful login message as\"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 69
+                }
+              ],
+              "location": "SwagLogin.i_should_be_landed_on_the_homepage_with_unsuccessful_login_message_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "this feature is used to define the login page of the application",
+    "description": "",
+    "id": "this-feature-is-used-to-define-the-login-page-of-the-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/swaglogin.feature",
+    "tags": []
+  }
+]

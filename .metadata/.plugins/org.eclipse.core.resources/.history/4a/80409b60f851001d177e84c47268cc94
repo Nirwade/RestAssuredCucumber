@@ -1,0 +1,32 @@
+package oPPsConCept;                           
+                                         // Interfaces --> nothing but pure abstraction which displays only useful information (here we cannot have non-abstract/normal methods
+                                               
+  interface Animals { 
+	   
+  public void eats(); 
+                                                 // To declare the class as interface, we use interface keyword 
+  }
+                                                       //Rules
+                                                      //1. We cannot create an constructor inside interface class
+                                                     // 2. we cannot have non abstract methods neither we can implement these methods inside interfaces
+    class Lion implements Animals {                 // 3. we use a implements keyword instead of extend keyword to inherit animal class
+                                                   //4.Whatever method present in animal class, we will implement in subclasses/child classes
+   public void eats() {
+	
+	System.out.println("Walks on 4 legs");
+			
+	}
+	   
+	   
+   }
+                                                
+                                               
+public class InterFaces {                     
+                                             
+	public static void main(String[] args) {
+		Lion l1 = new Lion();
+		l1.eats();
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package oPPsConCept;                            //   Interfaces --> nothing but pure abstraction
+                                               // To declare the class as interface, we use interface keyword
+public class InterFaces {
+
+	public static void main(String[] args) {
+		                                        
+
+	}
+
+}

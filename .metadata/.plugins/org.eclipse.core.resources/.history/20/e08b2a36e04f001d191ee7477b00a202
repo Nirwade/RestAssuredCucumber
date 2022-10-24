@@ -1,0 +1,91 @@
+package test;
+
+public class Caaassting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Casting : converting one primitive data type to another, cannot covert integer to string
+		// 2 Type 
+		//1. implicit casting: java automatically performs implicit casting
+		//2. Explicit casting: we need to manually create the explicit casting by using '()' and decimal values after. will be truncated
+		
+		
+		
+		// implicit casting 
+		
+		double price = 100.00;
+		double finalPrice = price + 18;
+		System.out.println(finalPrice);
+		
+		
+	   //Explicit casting
+		
+		int price1 = 100;
+		int finalprice1 = (int) (price1 + 18.0);
+		System.out.println(finalprice1);
+		
+		
+		//Constants 
+		// if we want to finalize a variable value we will use final keyword 
+		
+		final float PI = 3.14F;
+		System.out.println(PI);
+		
+		
+		//Operations in Java
+		
+//1. Arithmetic operations 2.Assignment operations 3.Unary operations 4.logical operations 5.Comparison operations
+		
+	
+		//Arithmetic operations (add, subtract, multiple, division, modulo) modulo implies the remainder
+		
+		int a = 10; int b = 20;
+		int c = a+b;
+		System.out.println(c);
+		
+		int a2 = 10; int b3 = 20;
+		int c4 = a2%b3;    // modulo
+		System.out.println(c4);
+		
+		// Assignment operations (=) implies assignment operator
+		
+		int a1 = 25;
+		
+		//Unary operators
+		int A = 20;
+		int B = 30;
+		int C = A +1;  // Or 
+		
+		int C1 = A++; // add values later
+		System.out.println("printing " + C1);
+		
+		
+		int C2 = ++A;  // adds values before only 
+		System.out.println("printing1 " + C2); 
+		
+	
+		int D1 = B--; // Subtracts values later
+		System.out.println("printing " + D1);
+		
+		
+		int D2 = --B;  // Subtracts values before only 
+		System.out.println("printing1 " + D2);	
+		
+		// Maths operations 
+		
+		int m1 = 100;
+		int m2 = 29;
+		int m3 = Math.max(100, 20);
+		System.out.println(m3);
+		
+		
+		int m4 = Math.min(100, 20);
+		System.out.println(m3);
+		
+		
+		
+
+	}
+
+}

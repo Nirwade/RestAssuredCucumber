@@ -1,0 +1,36 @@
+package test12;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FbSignUp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriver web1 = new ChromeDriver();
+        web1.get("https://www.facebook.com/");
+        web1.manage().window().maximize();
+        web1.manage().timeouts().implicitlyWait(20, TimeUnit.MILLISECONDS);
+        
+        WebElement CreateNewAcc = web1.findElement(By.xpath("a[data-testid *=open-registration]"));
+        CreateNewAcc.click();
+        
+        WebElement firstname = web1.findElement(By.xpath("input[name=firstname]"));
+		firstname.sendKeys("shashi");
+        WebElement surename = web1.findElement(By.xpath("input[name=lastname]"));
+        surename.sendKeys("nirwa");
+        WebElement MobileNum = web1.findElement(By.xpath("input[@name=reg_email__]"));
+        MobileNum.sendKeys("8919635709");
+        WebElement age = web1.findElement(By.xpath("//select[@name='birthday_day']"));
+        age.sendKeys("24");
+        
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package test;
+
+public class NonPrimitive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Strings -- Different operations 
+		// Concatenations
+		String name1 = "shash";
+		String name2 = "shashi";
+		String name3 = name1 +  " and "  + name2;
+		System.out.println(name3);
+		
+
+	}
+
+}

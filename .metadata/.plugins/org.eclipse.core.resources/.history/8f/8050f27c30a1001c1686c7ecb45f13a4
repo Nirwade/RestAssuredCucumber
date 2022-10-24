@@ -1,0 +1,21 @@
+package Test3;
+
+public class ReverseNumber1 {
+
+	public static void main(String[] args) {
+		
+		 int num2 = 1234567;
+	     int  rev=0;
+	     
+	    while(num2>0) {
+	     int remainder= num2%10;
+	     rev=rev*10 +remainder;
+	     num2=num2/10;
+	     
+	    System.out.println("print"   + rev);	
+	   
+	    }
+}
+	
+
+}

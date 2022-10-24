@@ -1,0 +1,15 @@
+package Test3;
+
+public class ForLoopExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+for(Float num=(float)2.5;num<=20.5;num++) {
+			
+			System.out.println("This is example..." +num);
+		}
+
+	}
+
+}

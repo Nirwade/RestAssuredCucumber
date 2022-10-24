@@ -1,0 +1,29 @@
+package Test3;
+
+public class PrimeNumbercheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+				
+		int var1=13;
+		Boolean flag = true;
+		for(int index=2;index>var1;index++) {
+		
+		int res1=var1%index;
+		if(res1 == 0) {
+			flag = false;
+			break;
+		}
+		if (flag == true) {
+			System.out.println("This is prime number" +res1);
+			
+		}else {
+			System.out.println("This is even number" +res1);
+		}
+		}	
+
+	}
+
+}	
+

@@ -1,0 +1,30 @@
+package Test3;
+
+import java.util.Scanner;
+
+public class Numbercheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//if num1/2
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter a number....");
+		
+	      float num1=scanner.nextFloat();
+	      
+		if(num1%2==0){
+	    	  
+	    	  System.out.println("This is even number");
+	    	  
+	      }else(num1+1); {
+	    	  
+	    	  System.out.println("This is odd number");
+	    	  
+	      }
+scanner.close();
+	}
+
+}

@@ -1,0 +1,36 @@
+package oPPsConCept;                           
+                                         // Interfaces --> nothing but pure abstraction which displays only useful information (here we cannot have non-abstract/normal methods
+                                               
+  interface Animals { 
+	   int eyes = 2;
+  public void eats(); 
+                                                       // To declare the class as interface, we use interface keyword 
+  }
+                                                       //Rules
+  interface Harbivore {
+	 
+	 int ears = 2;                                     //1. We cannot create an constructor inside interface class
+  }
+                                                     //2. we cannot have non abstract methods neither we can implement the methods inside interfaces
+  class Lion implements Animals, Harbivore {        //3. we use a implements keyword instead of extend keyword to inherit animal class
+                                                   //4.Whatever method present in animal class, we must implement in subclasses/child classes
+   public void eats() {                           //And the methods which are present in parent class(animals class), will just declare it
+	                                             //5.The properties present in interface class by default they will be Static, Final, Public
+	                                            //eg: eyes --> 1.will be same for all child classes 2.can't be altered & 3.will be accessible for all classes
+   System.out.println("Walks on 4 legs");     //6.All methods in interface class are by default Public & Abstract even if we don't write there
+			                                 //but in child class we should mention method as public
+	}                                       //7.Interface supports multiple inheritance i.e; child class (Derived) class implements both Parent1 & Parent2 classes (Base class)
+	                                       //eg:line no: 15;
+	   
+   }
+                                                
+                                               
+public class InterFaces {                     
+                                             
+	public static void main(String[] args) {
+		Lion l1 = new Lion();
+		l1.eats();
+
+	}
+
+}

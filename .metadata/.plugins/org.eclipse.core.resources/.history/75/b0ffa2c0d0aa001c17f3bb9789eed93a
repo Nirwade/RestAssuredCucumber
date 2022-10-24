@@ -1,0 +1,8 @@
+package Test3;
+
+public class ChildClass extends Person{
+	
+	public void print() {
+
+}
+}

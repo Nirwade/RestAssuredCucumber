@@ -1,0 +1,10 @@
+package oPPsConCept;          // Packages: is a collection of similar types of classes, interfaces and sub-packages.
+                              // packages are of 2 types: 1. Built-in 2.User-defined
+public class EncapSulation { //  eg: Built-in --> importing --> java.util.io
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

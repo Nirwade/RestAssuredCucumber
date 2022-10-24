@@ -1,0 +1,28 @@
+package test;
+
+public class Caaassting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Casting : converting one primitive data type to another, cannot covert integer to string
+		// 2 Type 
+		//1. implicit casting: java automatically performs implicit casting
+		//2. Explicit casting: we need to manually create the explicit casting by using '()' and decimal values after. will be truncated
+		
+		// implicit casting
+		
+		double price = 100.00;
+		double finalPrice = price + 18;
+		System.out.println(finalPrice);
+		
+		
+		//Explicit casting
+		
+		int price1 = 100;
+		int finalprice1 = (int) (price1 + 18.0);
+		System.out.println(finalprice1);
+
+	}
+
+}

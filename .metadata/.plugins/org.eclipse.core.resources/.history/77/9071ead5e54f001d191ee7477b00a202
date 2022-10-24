@@ -1,0 +1,22 @@
+package test;
+
+public class ConditionalStatements {
+
+	public static void main(String[] args) {
+		
+		// Conditional statements 
+		
+		boolean IsSunUp = false;
+		 
+		if (IsSunUp== true) {
+			
+			System.out.println("This is a day");
+			
+		}
+		else 
+			System.out.println("This is night");
+		
+
+	}
+
+}

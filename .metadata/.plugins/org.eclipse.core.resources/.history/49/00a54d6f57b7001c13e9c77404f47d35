@@ -1,0 +1,50 @@
+package test12;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FbSignUp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+        driver.get("https://www.facebook.com/");
+        driver.manage().window().maximize(); //maximize the window
+        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS); // wait time
+        
+        WebElement CreateNewAcc = driver.findElement(By.xpath("//a[@data-testid='open-registration-form-button']"));
+        CreateNewAcc.click();
+        
+     /*   WebElement firstname = web1.findElement(By.xpath("//input[@name='firstname']"));
+        WebElement surename = web1.findElement(By.xpath("//input[@name='lastname']"));
+        WebElement MobileNum = web1.findElement(By.xpath("//input[@name='reg_email__']"));
+        WebElement age = web1.findElement(By.xpath("//select[@name='birthday_day']"));
+         
+		firstname.sendKeys("shashi");
+        surename.sendKeys("nirwa");
+        MobileNum.sendKeys("8919635709");
+        age.sendKeys("24"); */
+
+
+        WebElement FirstName = driver.findElement(By.xpath("//input[@name='firstname']"));
+        WebElement LastName = driver.findElement(By.xpath("//input[@aria-label='Last name']"));
+        WebElement Email = driver.findElement(By.xpath("//input[@name='reg_email__']"));
+        WebElement Password = driver.findElement(By.xpath("//input[@name='reg_passwd__']"));
+                
+        FirstName.sendKeys("Donald");
+        LastName.sendKeys("Kurangwa");
+        Email.sendKeys("email@email.com");
+        Password.sendKeys("355RD@hgf#");
+        
+        
+
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package OOPS;
+
+public class Employee {
+	String Name;
+	int Salary;
+	String Company;
+	
+	public Employee(String Name,int Salary, String Company) {
+		this.Name= Name;
+		this.Salary = Salary;
+		this.Company = Company;	
+		
+		/* this.Name= p3;
+		this.Salary = p2;
+		this.Company = p1;	we can write in such way as well,*/
+		//it is a good practice to use this keyword when defining constructor//
+	}
+	
+	public void PrintAll(){
+	System.out.println("The name of employee..." + Name);
+	System.out.println("The Company of employee..." + Company);
+
+	}
+	
+}

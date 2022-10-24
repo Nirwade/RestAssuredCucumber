@@ -1,0 +1,24 @@
+package Test3;
+
+public class LoopExamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//This is while loop//
+		
+		int num1=5;
+		
+		while(num1>=2) {
+			num1=num1+2;
+
+			if(num1==15)
+				continue;
+			System.out.println("This is for pratice..." + num1);
+			
+		}
+			
+
+	}
+
+}

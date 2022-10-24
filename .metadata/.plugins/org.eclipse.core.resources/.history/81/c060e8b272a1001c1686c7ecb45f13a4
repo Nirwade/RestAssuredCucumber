@@ -1,0 +1,23 @@
+package Test3;
+
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int var3 =10;
+		try {
+			 int result= var3%0;
+	 
+		}	catch(Exception e) {
+			
+			 System.out.println("print");
+
+		}
+		 System.out.println("print to continue");
+
+	}
+
+
+}

@@ -1,0 +1,25 @@
+package apiChain;
+
+
+
+import org.junit.Test;
+
+import io.restassured.response.Response;
+
+public class EndToEndTest {
+	
+	
+	Response request;
+	
+	String BaseURI = "http://35.78.107.1:8088/employees";
+    
+
+	@Test
+	public void test1() {
+		
+		
+		
+		
+	}
+
+}

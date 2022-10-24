@@ -1,0 +1,161 @@
+package apiChain;
+
+
+
+import org.testng.annotations.Test;
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
+import org.testng.Assert;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+import io.restassured.specification.RequestSpecification;
+
+public class EndToEndTest {
+	
+	
+	Response response;
+	
+	String BaseURI = "http://35.78.107.1:8088/employees";
+    
+    @Test
+	public void test1() throws IOException {
+		
+		response = GetAllMethods();
+		AssertJUnit.assertEquals(response.getStatusCode(), 200);      
+		
+		
+		
+		response = PostMethod(); 
+		int responsecode = response.getStatusCode();
+		AssertJUnit.assertEquals(responsecode, 201);
+		System.out.println(responsecode);
+		
+		JsonPath jpath = response.jsonPath();
+		int empid = jpath.get("id");
+		System.out.println(empid);
+		
+		String frstname = jpath.get("firstName");
+		System.out.println("Emp firstname is -- > " + frstname);
+		
+		int salary = jpath.get("salary");
+		System.out.println("Added salary is -- > " + salary);
+		
+		//Assert.assertEquals(frstname, "Sujan");
+		//Assert.assertEquals("100000", salary);
+		
+		
+		response = PutMethod();
+		
+		int staatuscode1 = response.getStatusCode();
+		System.out.println(staatuscode1);
+		AssertJUnit.assertEquals(staatuscode1, 200);
+		
+		String ResponseBody  = response.getBody().asString();
+		System.out.println("Response body is --> " + ResponseBody);
+		
+		JsonPath jpath1 = response.jsonPath();
+		int UpEmId = jpath1.get("id");
+		System.out.println("Updated em id is -- >  " + UpEmId);
+		
+		
+		response = DelMethod();
+		int statuscode = response.getStatusCode();
+		System.out.println("The statuscode for del method --> " + statuscode);
+		AssertJUnit.assertEquals(statuscode, 200);
+		
+		
+		response = UpdtdGetMethod();
+		String responsebody = response.getBody().asString();
+		System.out.println("responsebody is empty-- > " + responsebody);
+		AssertJUnit.assertEquals(responsebody, "{}");
+		
+		int statuscode1 =response.statusCode();
+		System.out.println("The status code for updtdGet is -->  " + statuscode1);
+		AssertJUnit.assertEquals(statuscode1, 400);
+			
+	}
+	
+	
+	
+	@Test
+	public Response GetAllMethods() {
+		
+		RestAssured.baseURI = BaseURI;
+		
+		RequestSpecification request =RestAssured.given();
+		
+	    Response response =	request.get();
+		
+		return response;
+		
+	}
+	
+	@Test
+	public Response PostMethod() throws IOException {
+		
+		RestAssured.baseURI = BaseURI;
+		
+		RequestSpecification request = RestAssured.given();
+		
+	   
+	 
+	    Response response = request.contentType(ContentType.JSON).accept(ContentType.JSON).body(Databytes).post();
+	   
+	    String responsebody = response.getBody().asString();
+	   
+	    System.out.println(responsebody);
+	    
+		return response;
+	}
+	
+	@Test
+	public Response PutMethod() {
+		
+		RestAssured.baseURI = BaseURI;
+		
+		RequestSpecification request = RestAssured.given();
+		
+		Map<String,Object> mobj = new HashMap<String,Object>();
+		
+		mobj.put("firstName", "Sujana");
+		mobj.put("lastName", "ahujan");
+		
+		Response response = request.contentType(ContentType.JSON).accept(ContentType.JSON).body(mobj).put("/11");
+		
+		return response;
+	}
+	
+	
+	@Test
+	public Response DelMethod() {
+		
+		RestAssured.baseURI = BaseURI;
+		
+		RequestSpecification request = RestAssured.given();
+		
+		Response response = request.delete("/11");
+		
+		return response;
+	}
+	
+	@Test
+	public Response UpdtdGetMethod() {
+		
+		RestAssured.baseURI = BaseURI;
+		
+		RequestSpecification request = RestAssured.given();
+		
+		Response response  =request.get("/11");
+		
+		return response;
+	}
+
+}

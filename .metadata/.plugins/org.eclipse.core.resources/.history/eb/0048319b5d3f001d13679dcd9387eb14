@@ -1,0 +1,19 @@
+package restAPI;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class GetRequestWithParams {
+	
+	public void test3 () {
+	
+	RestAssured.baseURI = "http://localhost:3000/employees";
+	
+	RequestSpecification request = RestAssured.given();
+	
+	
+	
+	}
+	
+	
+}

@@ -1,0 +1,6 @@
+Feature: Perform the CURD Operations
+
+  Scenario: To Perform the GET Operation on Employe 08
+    Given The base URI is "http://localhost:3000/employees"
+    When I perform the GET Operation
+    Then Responsecode should be 200

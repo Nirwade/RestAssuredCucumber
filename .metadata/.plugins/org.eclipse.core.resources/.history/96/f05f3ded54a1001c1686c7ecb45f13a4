@@ -1,0 +1,42 @@
+package Test3;
+
+public class SwitchExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str1= "Bod the Builder";
+		int vowelCount=0;
+				
+		for(int index=0;index<str1.length();index++) {
+			
+			int var1= str1.charAt(index);
+			
+			switch (var1) {
+			case 'a':
+			case 'e':
+			case 'i':
+			case 'o':
+			case 'u':
+			case 'A':
+			case 'E':
+			case 'I':
+			case 'O':
+			case 'U':
+				vowelCount = vowelCount+1;
+				break;	
+				
+			}
+							
+		}
+		
+		System.out.println(vowelCount);
+	
+		
+		
+	
+				
+
+	}
+
+}

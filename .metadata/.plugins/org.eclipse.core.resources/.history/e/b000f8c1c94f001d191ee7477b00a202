@@ -1,0 +1,63 @@
+package test;
+
+import java.util.Arrays;
+
+public class NonPrimit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Non primitive Data types  ----> 1. Strings -- Different operations 
+		
+		// Concatenations
+		String name1 = "shash and shash";
+		String name2 = "shashi";
+		String name3 = name1 +  " and "  + name2;
+		System.out.println(name3);
+		
+		//length
+		int name4 = name2.length();
+		System.out.println(name4);
+		
+		//CharAt
+		char name5 = name2.charAt(1);
+		System.out.println(name5);
+		
+		//SubString
+		String name6 = name2.substring(0, 5);
+		System.out.println(name6);
+		
+		//replace 
+		String name7 = name2.replace('s', 'S');
+		System.out.println(name7);
+	
+		
+	//Non primitive Data types  ----> 2. Arrays -- Different operations
+		
+		// Arrays: Collection of similar data types 
+		
+	int[] marks = new int[5] ;      // one dimensional array
+	                                // initialize with new keyword
+	    marks[1] = 98;
+		marks[2] = 95;
+		marks[3] = 99;
+		marks[4] = 94;
+		
+		System.out.println(marks[1]);
+		
+		//length  ----> gives the length of array
+		  System.out.println(marks.length);
+	
+	    // Sort 
+		 Arrays.sort(marks);
+		 System.out.println(marks);
+		
+
+	}
+
+
+
+
+	}
+
+}

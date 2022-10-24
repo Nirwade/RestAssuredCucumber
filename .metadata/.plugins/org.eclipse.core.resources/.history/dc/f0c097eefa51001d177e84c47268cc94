@@ -1,0 +1,25 @@
+package oPPsConCept;
+                                                     //Static Keyword --> it is used which could be common for all the objects eg:
+  class Student1 {                                   //school name could be common for all the students, so we can make the school attribute as static
+	  String name;                                 //here school becomes common for all objects(Students) and if any changes made in static attribute
+	                                               //it will be applied for all the students
+	static String school;
+	                                              // Rules
+	                                             // We can directly initialize static keyword with it's call name, no need to create an object for it
+  }
+                                             
+
+public class StaTicKeY {
+
+	public static void main(String[] args) {
+		
+		Student1 s1 = new Student1();
+		s1.name = "aman";
+		Student.school = "MVN";
+		
+		
+		
+
+	}
+
+}

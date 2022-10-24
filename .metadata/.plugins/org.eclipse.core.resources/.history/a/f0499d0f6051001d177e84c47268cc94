@@ -1,0 +1,13 @@
+package oPPsConCept;
+
+public class PolyMorphisms {                  // ability to present the same interface in more then one form
+                                             // 1. Compile Time Polymorphism (Static) 
+	                                        //2. Runtime Polymorphism (Dynamic) 
+	public static void main(String[] args) {
+		
+		                                          /*  Compile Time Polymorphism-->The polymorphism which is implemented at the compile time is known as compile-time polymorphism.
+		                                           *  Example - Method Overloading    
+                                                   */
+	}
+
+}

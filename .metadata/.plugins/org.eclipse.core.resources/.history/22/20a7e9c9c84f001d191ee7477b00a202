@@ -1,0 +1,34 @@
+package test;
+
+public class NonPrimitive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Strings -- Different operations 
+		// Concatenations
+		String name1 = "shash and shash";
+		String name2 = "shashi";
+		String name3 = name1 +  " and "  + name2;
+		System.out.println(name3);
+		
+		//length
+		int name4 = name2.length();
+		System.out.println(name4);
+		
+		//CharAt
+		char name5 = name2.charAt(1);
+		System.out.println(name5);
+		
+		//SubString
+		String name6 = name2.substring(0, 5);
+		System.out.println(name6);
+		
+		//replace 
+		String name7 = name2.replace('s', 'S');
+		System.out.println(name7);
+		
+
+	}
+
+}

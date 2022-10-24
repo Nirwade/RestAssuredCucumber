@@ -1,0 +1,52 @@
+package Test3;
+
+public class ReverseExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Reverse String//
+		//Reverse Array//
+		//Reverse number//
+		
+		
+String str1= ("Clean India Green India");
+String rever=" ";
+
+System.out.println(str1.length()-1);
+
+ for(int index=str1.length()-1;index>=0;index--) {
+	rever=rever+str1.charAt(index);
+	}
+System.out.println(rever);
+}
+
+// Number of vovels//
+
+//Reversal of Array//
+
+int[] array1= {20,30,40,50,60};{
+
+for(int index=array1.length-1;index>=0;index++) {
+	
+	
+	
+	System.out.println(array1[index]);
+	
+	int[] Sara= {40,50,60,70,80};
+	
+	for(int index1=0;index1<1;index1++) {
+	
+	
+}
+
+
+//reversal number//
+
+
+
+
+	
+	
+		
+}}

@@ -1,0 +1,20 @@
+package test;
+
+public class ExceptionHandlings {
+
+	public static void main(String[] args) {
+		
+		/* Exception handling : it is a mechanism to handle runtime errors that distrubts the normal flow of the program
+		 * such as IO exception, ClassNotFound exception
+		  Try block: we add the peace of code where the possible exception might occur
+		  Catch block: here we write the block of code to handle the exception
+		  Finally block: regardless the exception handled or not the finally block with be executed
+      */
+		
+		
+		int marks[] = {98,99,96};
+		System.out.println(marks[5]);
+		
+	}
+
+}

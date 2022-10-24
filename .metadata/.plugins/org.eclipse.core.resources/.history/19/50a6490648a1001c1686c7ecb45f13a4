@@ -1,0 +1,26 @@
+package Test3;
+
+import java.util.Scanner;
+
+public class PrimeNumbercheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan= new Scanner(System.in);		
+		System.out.println("Please enter a number");
+		
+	int nur1= scan.nextInt();
+	int var1=2;
+	if (nur1%var1 == 0) {
+		
+		System.out.println("this is prime"+nur1);
+	}else {
+		
+	
+	System.out.println("its not");
+		
+		
+	}}}
+
+

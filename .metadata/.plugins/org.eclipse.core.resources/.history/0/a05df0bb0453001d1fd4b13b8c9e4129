@@ -1,0 +1,14 @@
+package restAPI;
+
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+
+@CucumberOptions(
+		
+		plugin = {"html:target/html-cucumber", "json:target/cucumber.json"}
+
+
+public class TestRunner1 {
+
+}

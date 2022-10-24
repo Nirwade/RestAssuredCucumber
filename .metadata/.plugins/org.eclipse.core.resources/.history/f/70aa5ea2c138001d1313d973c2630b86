@@ -1,0 +1,29 @@
+package packageB;
+
+import org.openqa.selenium.By;
+
+import io.appium.java_client.android.AndroidDriver;
+import junit.CalcTest;
+import junit.framework.Assert;
+
+public class Test2 {
+	
+	 AndroidDriver driver = CalcTest.driver;
+
+	
+	public void multiple () {
+		driver.findElement(By.id("com.google.android.calculator:id/digit_5")).click();
+		driver.findElement(By.id("com.google.android.calculator:id/op_mul")).click();
+		driver.findElement(By.id("com.google.android.calculator:id/digit_8")).click();
+		driver.findElement(By.id("com.google.android.calculator:id/eq")).click();
+	    String actreval=	driver.findElement(By.id("com.google.android.calculator:id/result_final")).getAttribute("text");
+	    
+   int ActualVal=Integer.parseInt(actreval);
+   int ExpectVal = 40;
+   Assert.assertEquals(ExpectVal, ActualVal);
+
+		
+		
+	}
+
+}

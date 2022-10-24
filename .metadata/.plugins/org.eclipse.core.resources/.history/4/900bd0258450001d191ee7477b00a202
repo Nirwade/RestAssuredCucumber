@@ -1,0 +1,62 @@
+package test;
+
+import java.util.Scanner;
+
+public class JavaLoops {
+
+	public static void main(String[] args) {
+		
+//		/*loops --> loops are used for repetitive tasks, in java we have 3 types of loops
+//		1. For loop 2. While loop 3. Do while loop
+//		1. for loop: we have initialization, condition, update statement
+//		for(initialization; condition; update statement) {
+//        body
+//		}
+//		*/
+//
+//		for (int i = 0; i<100; i++) {
+//			
+//			System.out.println(i);
+//		}
+//		
+//        for (int i = 50; i<1; i--) {
+//			
+//			System.out.println(i);
+//		
+//	}
+//	
+//        // while loop ---> the body of the loop will be executed until the condition is true
+//        
+//        int j = 0;
+//        while (j<20) {
+//        	System.out.println(j);
+//        	j++;
+//        }
+//        
+//        
+//        // Do while loop ---> at least once the body of the loop will be executed and then the condition is verified
+//        
+//        int k=0;
+//        do 
+//        {
+//        	System.out.println(k);
+//        	k++;
+//        }
+//        while(k<10);
+//        
+//        
+        // program using do while loop
+        
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        System.out.println("Enter the number");
+        
+        int numb = input;
+        do 
+        {
+        	System.out.println("This is valid number");
+        	System.out.println(numb);
+        } while(numb<=0);
+	}
+
+}

@@ -1,0 +1,15 @@
+package Test3;
+
+public class ForLoopExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+for(int count=1;count>=20;count++) {
+			
+			System.out.println("This is example..." +count);
+		}
+
+	}
+
+}

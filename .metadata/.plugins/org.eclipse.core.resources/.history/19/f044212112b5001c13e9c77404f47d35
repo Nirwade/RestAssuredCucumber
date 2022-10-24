@@ -1,0 +1,36 @@
+package test12;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FaceBook {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+        driver.get("https://www.facebook.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.MILLISECONDS );
+		
+		WebElement ID = driver.findElement(By.xpath("//input[@name='email']"));
+		ID.sendKeys("shashi@1293725721gmail.com");
+		WebElement passward = driver.findElement(By.xpath("//input[@type='password']"));  //button[@name="login"]
+		passward.sendKeys("abcd@A12344");
+		WebElement login = driver.findElement(By.xpath("//button[@name='login']"));
+		login.click();
+		
+		driver.close();
+				
+
+
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package oPPsConCept;
+
+class pen {
+	
+	String color;  // these are attributes of pen
+	String type; //gel, ballpoint
+	
+	public void writing() {  // functions which are defined inside the class we call it as methods
+		
+		System.out.println("Writing something");   // this is called blue print of a class pen
+	}
+	
+}
+
+public class ObjClassConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		pen p1 = new pen ();   // now we need to create obj of pen class to access the blue print
+		 
+		p1.color = "blue";
+		p1.type = "gel";
+		p1.writing();
+		
+		
+
+	}
+
+}

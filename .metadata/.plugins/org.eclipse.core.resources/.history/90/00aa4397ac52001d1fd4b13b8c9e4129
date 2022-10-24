@@ -1,0 +1,14 @@
+package restApIXmL;
+
+import org.testng.annotations.Test;
+
+public class XMLTest {
+	
+	@Test
+	public void test1() {
+		
+		
+		
+	}
+
+}

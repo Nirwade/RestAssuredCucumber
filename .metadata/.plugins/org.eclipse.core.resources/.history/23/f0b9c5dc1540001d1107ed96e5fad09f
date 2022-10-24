@@ -1,0 +1,21 @@
+package test;
+
+public class ArraysExample {
+
+	public static void main(String[] args) {
+
+		int marks[] = {90, 91,92,94,98};
+		
+		for (i=0; i<5; i++) {
+			
+			System.out.println(marks[i]);
+		}
+		
+		
+		
+			
+			
+		
+	}
+
+}

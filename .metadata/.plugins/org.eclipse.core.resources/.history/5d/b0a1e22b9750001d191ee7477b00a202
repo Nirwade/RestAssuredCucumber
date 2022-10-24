@@ -1,0 +1,13 @@
+package test;
+
+public class ExceptionHandlings {
+
+	public static void main(String[] args) {
+		
+		/* Exception handling : it is a mechanism to handle runtime errors that distrubts the normal flow of the program
+		 * such as IO exception, ClassNotFound exception
+		
+      */
+	}
+
+}

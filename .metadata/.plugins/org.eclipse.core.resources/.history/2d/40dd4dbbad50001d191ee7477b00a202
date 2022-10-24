@@ -1,0 +1,47 @@
+package test;
+
+public class Mmthods {
+	
+
+	public static void Mmthods1() {
+		  
+		  System.out.println("Eclipse IDE");
+	}
+	
+	public static void Mmthods2(String name) {
+		
+		System.out.println(name);
+		
+	}
+	
+	public static void Mmthods3(int a, int b) {
+		
+		int sum = a+b;
+		System.out.println(sum);
+	}
+
+	public static void main(String[] args) {
+		// Methods
+		
+		  Mmthods1();
+		  Mmthods1();
+		  Mmthods1();
+		  
+		  Mmthods2("aman");
+		  Mmthods2("ashia");
+		  
+		  Mmthods3(5,7);
+		  Mmthods3(10,9);
+		  Mmthods3(9,11);
+		  
+	
+
+	}
+	
+
+		  
+		
+
+	}
+
+

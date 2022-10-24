@@ -1,0 +1,32 @@
+package Test3;
+
+import java.util.Scanner;
+
+public class ConditionExample1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//if(condition){
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the number");
+
+		
+		float num3 = scanner.nextFloat();
+		
+	
+		if (num3>=8.9) {
+			System.out.println("Enter valid number");
+			
+		} else if (num3 == 7.4) {
+			System.out.println("Almost close");
+			
+		}else {
+			System.out.println("successful");
+		}
+scanner.close();
+	}
+
+}

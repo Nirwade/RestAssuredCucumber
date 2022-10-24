@@ -1,0 +1,11 @@
+package restBDD;
+
+public class DelRestBDD {
+	
+	@Test
+	public void test1() {
+		
+		
+	}
+
+}

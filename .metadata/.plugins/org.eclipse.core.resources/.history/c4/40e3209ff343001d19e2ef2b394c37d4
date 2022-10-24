@@ -1,0 +1,46 @@
+package gitHub;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class EndToEndGitTest {
+	
+	Response response;
+	
+	String BaseURI = "http://localhost:3000/employees";
+	
+	@Test
+	public void GetReq () {
+		
+		response = GetReqAll ();
+		
+		Assert.assertEquals(response.getStatusCode(), 200);
+		
+		
+	}
+	
+	
+	
+	
+	@Test
+	public Response GetReqAll () {
+		
+		RestAssured.baseURI = BaseURI;
+		
+		RequestSpecification request = RestAssured.given();
+		 
+	    Response response = request.get();
+	
+	    return response;
+	
+	
+		
+		
+		
+	}
+
+}

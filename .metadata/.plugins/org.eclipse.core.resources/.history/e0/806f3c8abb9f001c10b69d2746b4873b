@@ -1,0 +1,26 @@
+package Test3;
+
+public class ReverseExample2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] Sara= {40,50,60,70,80,90,10};
+		
+		for(int index1=Sara.length-1;index1<=1;index1--) {
+			
+		System.out.println(index1);
+		
+		int[] Sara1 = {40,50,60,70,80,90,10};
+		
+		for(int var2:Sara1) {
+			System.out.println(var2);
+		}
+		
+		
+		
+	}
+
+	}
+
+}

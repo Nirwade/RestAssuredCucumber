@@ -1,0 +1,12 @@
+package restAPI;
+
+import org.testng.annotations.Test;
+
+public class PostReqWithJsonObj {
+
+	@Test
+	public void test5 () {
+		
+		
+	}
+}

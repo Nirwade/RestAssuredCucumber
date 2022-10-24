@@ -1,0 +1,26 @@
+package oPPsConCept;
+
+                                 // inheriting the properties of Base class into Derived class
+class shape {                   // We call it as inheritance 
+	                           // This is the example of single level inheritance
+	String color;             // We will use the extends keyword
+	
+}
+                                       
+class Triangle extends shape {
+	
+	
+	
+}
+
+public class IInheritance {
+
+	public static void main(String[] args) {
+		
+		Triangle t1 = new Triangle();
+		t1.color = "blue";
+		
+
+	}
+
+}

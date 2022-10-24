@@ -1,0 +1,20 @@
+package OOPS;
+
+public class Employee {
+	String Name;
+	int Salary;
+	String Company;
+	
+	public Employee(String Name,int Salary, String Company) {
+		this.Name= Name;
+		this.Salary = Salary;
+		this.Company = Company;	
+	}
+	
+	public void Printname(){
+	System.out.println("The name of employee..." + Name);
+	System.out.println("The Company of employee..." + Company);
+
+	}
+	
+}

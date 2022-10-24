@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-07T20:56:48 IST" name="Default suite" finished-at="2022-08-07T20:56:48 IST" duration-ms="145">
+    <groups>
+      <group name="sanity">
+        <method signature="HomepageAnnot2.Test3()[pri:0, instance:test.HomepageAnnot2@52102734]" name="Test3" class="test.HomepageAnnot2"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2022-08-07T20:56:48 IST" name="Default test" finished-at="2022-08-07T20:56:48 IST" duration-ms="145">
+      <class name="test.HomepageAnnot2">
+        <test-method signature="Test2()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="Test2" finished-at="2022-08-07T20:56:48 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="AfterMethod" finished-at="2022-08-07T20:56:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="Test3()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="Test3" finished-at="2022-08-07T20:56:48 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="AfterMethod" finished-at="2022-08-07T20:56:48 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="Test4()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="Test4" description="this is for sample" finished-at="2022-08-07T20:56:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="AfterMethod" finished-at="2022-08-07T20:56:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="Test1()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="Test1" finished-at="2022-08-07T20:56:48 IST" depends-on-methods="test.HomepageAnnot2.Test4" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.HomepageAnnot2@52102734]" started-at="2022-08-07T20:56:48 IST" name="AfterMethod" finished-at="2022-08-07T20:56:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- test.HomepageAnnot2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

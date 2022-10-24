@@ -1,0 +1,30 @@
+package Test3;
+
+public class LoopExamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//This is while loop//
+		
+		int num1=5;
+		
+		while(num1<=22) {
+			num1=num1+2;
+
+			if(num1==15)
+				continue;
+			System.out.println("This is for pratice..." + num1);
+			
+		}
+			
+
+		//For loop//
+		
+		for(int count=1;count<=20;count++) {
+			
+			System.out.println("This is example..." +count);
+		}
+	}
+
+}

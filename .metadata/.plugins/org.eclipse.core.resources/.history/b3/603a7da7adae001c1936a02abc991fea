@@ -1,0 +1,27 @@
+package collections;
+
+import java.util.LinkedList;
+
+public class LinkedListExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedList<String> list1 = new LinkedList<String>();
+		
+		list1.add("John");
+		list1.add("Sara");
+		list1.add("delilah");
+		list1.add("delilah"); // here we can add multiple/similar values
+		System.out.println("This is an LinkedList "+list1);
+		
+		list1.addFirst("Remo"); // this function adds the value at the beginning 
+	
+		list1.addLast("Geeta");// this function add the value at the last
+		
+		
+		
+
+	}
+
+}

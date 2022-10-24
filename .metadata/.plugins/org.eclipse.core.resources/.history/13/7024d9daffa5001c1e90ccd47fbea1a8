@@ -1,0 +1,32 @@
+package OOPS;
+
+public class RunnerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	/*	Employee emp1 = new Employee();
+		emp1.Name = "Anand";
+		emp1.Salary =70000;
+		emp1.Company= "Tata";
+		
+		Employee emp2 = new Employee();
+		emp2.Name= "Himanshu";
+		emp2.Salary =750000;
+		emp2.Company ="Brila"; */
+		
+		//Employee emp1= new Employee("Anand",80000,"Tata");	
+		//Employee emp2= new Employee("Himanshu",950000,"Brila");	
+		Employee emp3= new Employee("rahul",956000);
+		Employee emp4= new Employee("mithun",956000);
+
+		Employee.Company = "Accenture";
+
+
+//emp2.Printname();	
+//emp1.Printname();
+emp3.Printname();
+
+	}
+
+}

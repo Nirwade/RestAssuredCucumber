@@ -1,0 +1,33 @@
+package test;
+
+import java.io.IOException;
+
+public class ExceptionHandlings extends Exception {
+
+	public static void main(String[] args) {
+		
+		/* Exception handling : it is a mechanism to handle runtime errors that distrubts the normal flow of the program
+		 * such as IO exception, ClassNotFound exception
+		  Try block: we add the peace of code where the possible exception might occur
+		  Catch block: here we write the block of code to handle the exception
+		  Finally block: regardless the exception handled or not the finally block with be executed
+		  Checked - compile time , UnChecked - runtime, Errors 
+      */
+		
+		
+		int marks[] = null;
+		Object random = new Object();
+		IOException io = new IOException ();
+		try {
+			
+			System.out.println(marks[5]);
+			
+		} catch (Exception e) {
+			
+			//	
+		}
+		System.out.println("student name is aman");
+		
+	}
+
+}

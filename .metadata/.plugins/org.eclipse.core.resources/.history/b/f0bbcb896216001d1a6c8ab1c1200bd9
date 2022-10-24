@@ -1,0 +1,36 @@
+package test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+
+
+public class HomepageAnnot2 {
+	
+	@Test(groups= {"sanity"})
+	public void Test3 () {
+		System.out.println("This is test case 3 from different class");
+	}
+	
+	@Test(dependsOnMethods=("test1"))
+	public void Test2 () {
+		System.out.println("This is test case 2 from different class using enable example");
+	}
+	
+	@Test
+	public void Test1 () {
+		System.out.println("This is test case 1 from different class using enable example");
+	}	
+	
+	
+	@Test(enabled=true, description = "this is for sample")
+	public void Test4 () {
+		System.out.println("This is test case 4 from different class using enable example");
+	}
+		
+	@AfterMethod
+	public void AfterMethod() {
+			System.out.println("This is AfterMethod in test 3");
+		}
+
+	}
+

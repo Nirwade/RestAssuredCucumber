@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;testcases.TestNGlistener&apos; to &apos;TestNGlistenerClass&apos;&#x0D;&#x0A;- Original project: &apos;Selenium-Maven&apos;&#x0D;&#x0A;- Original element: &apos;testcases.TestNGlistener&apos;&#x0D;&#x0A;- Renamed element: &apos;testcases.TestNGlistenerClass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestNGlistener&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;testcases{TestNGlistener.java[TestNGlistener" matchStrategy="1" name="TestNGlistenerClass" qualified="false" references="true" similarDeclarations="false" stamp="1661308306866" textual="false" version="1.0"/>
+</session>

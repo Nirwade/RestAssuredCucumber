@@ -1,0 +1,43 @@
+package test;
+
+import java.util.Scanner;
+
+public class MinProgram {
+
+	public static void main(String[] args) {
+		// Guess the random number
+		
+		int MyRandmNumb = (int)Math.random()*100;
+		
+		Scanner sc = new Scanner(System.in);
+		int Usernumb = 0;
+
+		
+		do {
+			
+			System.out.println("Enter a number");
+			Usernumb = sc.nextInt();
+		
+		
+		if (Usernumb==MyRandmNumb) {
+			
+			System.out.println("Congo! This is the correct number");
+			break;
+			
+		}
+		else if (Usernumb >MyRandmNumb) {
+			
+			System.out.println("Almost close, try some lower number");
+			
+		} 
+		else 
+		{
+			System.out.println("Almost close, try some higher number");
+			
+		} 
+		
+		}while(Usernumb>=0);
+		
+		sc.close();
+	}
+}

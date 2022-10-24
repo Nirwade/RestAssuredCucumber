@@ -1,0 +1,20 @@
+package oPPsConCept;
+
+
+class Student {
+	
+	public void Stdinfo() {
+		
+	}
+}
+
+public class ConstructorsC {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+}
